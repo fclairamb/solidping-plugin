@@ -1,0 +1,17 @@
+{
+  "name": "solidping",
+  "owner": {
+    "name": "Florent Clairambault",
+    "url": "https://github.com/fclairamb"
+  },
+  "metadata": {
+    "description": "SolidPing plugin for Claude Code: uptime monitoring through the SolidPing MCP server."
+  },
+  "plugins": [
+    {
+      "name": "solidping",
+      "source": "./",
+      "description": "Uptime monitoring through the SolidPing MCP server: checks, results, incidents, status pages and maintenance windows."
+    }
+  ]
+}
