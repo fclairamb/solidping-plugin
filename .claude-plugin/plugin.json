@@ -1,8 +1,8 @@
 {
   "name": "solidping",
   "displayName": "SolidPing",
-  "version": "1.0.0",
-  "description": "Uptime monitoring through one remote MCP server (OAuth 2.1). List and create checks across 40+ check types, read results and incidents, diagnose a failing check, and manage status pages and maintenance windows. Works with the hosted service at solidping.io; a self-hosted instance serves the same endpoint.",
+  "version": "1.0.1",
+  "description": "Uptime monitoring through one remote MCP server (OAuth 2.1). List and create checks across 40+ check types, read results and incidents, diagnose a failing check and manage status pages. Works with the hosted service at solidping.io; a self-hosted instance serves the same endpoint.",
   "author": {
     "name": "Florent Clairambault",
     "url": "https://github.com/fclairamb"

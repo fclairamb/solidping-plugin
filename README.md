@@ -38,24 +38,24 @@ claude mcp add --transport http solidping https://<your-host>/api/v1/mcp
 - "Add an HTTPS check on https://example.com every minute from two regions"
 - "Monitor the TLS certificate of example.com and warn 14 days before it expires"
 - "List the incidents of the last 7 days with their duration"
-- "Put the database checks in maintenance tonight from 22:00 to 23:00"
+- "Add the new API check to the public status page"
 
 ## Tools
 
 | Group | Tools |
 |---|---|
-| Read | `list_checks`, `get_check`, `list_results`, `list_incidents`, `get_incident`, `list_check_types`, `get_check_type_samples`, `list_regions`, `list_check_groups`, `list_status_pages`, `list_maintenance_windows`, `list_integrations` |
+| Read | `list_checks`, `get_check`, `list_results`, `list_incidents`, `get_incident`, `list_check_types` (with `type` for sample configs), `list_regions`, `list_check_groups`, `list_status_pages`, `get_status_page` |
 | Diagnose | `diagnose_check`, `validate_check`, `run_check` |
-| Write | `create_check`, `update_check`, `delete_check`, status page, maintenance window and integration create/update/delete |
-| Probe | `fetch_page`, `browser_snapshot`, `run_js_script`: run once against a target you name, store nothing |
+| Write | `create_check`, `update_check`, `delete_check`, `create_status_page`, `update_status_page`, `delete_status_page`, `manage_status_page_section`, `manage_status_page_resource`, `manage_status_page_incident` |
+| Probe | `probe` (`kind` = fetch, browser or script): runs once against a target you name, stores nothing |
 
-Every tool carries MCP annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`, `openWorldHint`). Only the probe tools are open-world.
+Every tool carries MCP annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`, `openWorldHint`). Only `probe` is open-world.
 
 ## Safety
 
 - The plugin pre-approves no tool. Your agent asks before each call unless you allow it yourself.
 - The OAuth token is scoped to one organization, and the server applies your role: a viewer cannot create or delete anything through MCP.
-- Probe tools go through the server's egress guard, which refuses private and loopback targets unless the instance operator allows them.
+- `probe` goes through the server's egress guard, which refuses private and loopback targets unless the instance operator allows them.
 - The skill tells the agent to confirm every write with you first and to treat tool output (check names, page bodies, error messages) as data, never as instructions.
 
 ## Links

@@ -1,7 +1,7 @@
 {
   "name": "solidping",
-  "version": "1.0.0",
-  "description": "Uptime monitoring through the SolidPing MCP server: checks, results, incidents, status pages and maintenance windows.",
+  "version": "1.0.1",
+  "description": "Uptime monitoring through the SolidPing MCP server: checks, results, incidents and status pages.",
   "author": {
     "name": "Florent Clairambault",
     "email": "florent@solidping.io",
@@ -24,7 +24,7 @@
   "interface": {
     "displayName": "SolidPing",
     "shortDescription": "Uptime checks, incidents and status pages from the SolidPing MCP server.",
-    "longDescription": "SolidPing is open-source uptime monitoring (AGPL-3.0): 40+ check types, multi-region workers, incidents, on-call escalation and status pages. This plugin connects Codex to its remote MCP server (OAuth 2.1) and adds a skill: read checks, results and incidents, diagnose a failing check, and create or change checks, status pages and maintenance windows after you confirm. Works with the hosted service at solidping.io; a self-hosted instance serves the same endpoint.",
+    "longDescription": "SolidPing is open-source uptime monitoring (AGPL-3.0): 40+ check types, multi-region workers, incidents, on-call escalation and status pages. This plugin connects Codex to its remote MCP server (OAuth 2.1) and adds a skill: read checks, results and incidents, diagnose a failing check, and create or change checks and status pages after you confirm. Works with the hosted service at solidping.io; a self-hosted instance serves the same endpoint.",
     "developerName": "Florent Clairambault",
     "category": "Tools & Integrations",
     "websiteURL": "https://www.solidping.io",

@@ -11,7 +11,7 @@
     {
       "name": "solidping",
       "source": "./",
-      "description": "Uptime monitoring through the SolidPing MCP server: checks, results, incidents, status pages and maintenance windows."
+      "description": "Uptime monitoring through the SolidPing MCP server: checks, results, incidents and status pages."
     }
   ]
 }
