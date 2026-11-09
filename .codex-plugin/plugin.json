@@ -7,7 +7,7 @@
     "email": "florent@solidping.io",
     "url": "https://github.com/fclairamb"
   },
-  "homepage": "https://www.solidping.io",
+  "homepage": "https://solidping.io/docs/",
   "repository": "https://github.com/fclairamb/solidping-plugin",
   "license": "MIT",
   "keywords": [
@@ -27,7 +27,7 @@
     "longDescription": "SolidPing is open-source uptime monitoring (AGPL-3.0): 40+ check types, multi-region workers, incidents, on-call escalation and status pages. This plugin connects Codex to its remote MCP server (OAuth 2.1) and adds a skill: read checks, results and incidents, diagnose a failing check, and create or change checks and status pages after you confirm. Works with the hosted service at solidping.io; a self-hosted instance serves the same endpoint.",
     "developerName": "Florent Clairambault",
     "category": "Tools & Integrations",
-    "websiteURL": "https://www.solidping.io",
+    "websiteURL": "https://solidping.io/docs/",
     "composerIcon": "./assets/icon.svg",
     "capabilities": [
       "Interactive",
